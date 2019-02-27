@@ -48,7 +48,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respositories\FooterRepository.cs" />
+    <Compile Include="Respositories\MenuGroupRepository.cs" />
+    <Compile Include="Respositories\MenuRepository.cs" />
+    <Compile Include="Respositories\OrderDetailRepository.cs" />
+    <Compile Include="Respositories\OrderRepository.cs" />
+    <Compile Include="Respositories\PageRepository.cs" />
+    <Compile Include="Respositories\PostCategoryRepository.cs" />
+    <Compile Include="Respositories\PostRepository.cs" />
+    <Compile Include="Respositories\PostTagRepository.cs" />
+    <Compile Include="Respositories\ProductCategoryRepository.cs" />
+    <Compile Include="Respositories\ProductRepository.cs" />
+    <Compile Include="Respositories\ProductTagRepository.cs" />
+    <Compile Include="Respositories\SlideRepository.cs" />
+    <Compile Include="Respositories\SupportOnlineRepository.cs" />
+    <Compile Include="Respositories\SystemConfigRepository.cs" />
+    <Compile Include="Respositories\TagRepository.cs" />
+    <Compile Include="Respositories\VisitorStatisticRepository.cs" />
+    <Compile Include="ShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -58,6 +83,10 @@
     <ProjectReference Include="..\Shop.Common\Shop.Common.csproj">
       <Project>{d6968d5e-54c9-4fb5-a0fe-c515f355547f}</Project>
       <Name>Shop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shop.Model\Shop.Model.csproj">
+      <Project>{c5f6f560-6a0f-4dd3-a6dd-8e4632e8bad2}</Project>
+      <Name>Shop.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
